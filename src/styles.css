@@ -82,3 +82,66 @@
 button {
   cursor: pointer;
 }
+
+.coverPage {
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+}
+
+form {
+  padding: 2rem;
+  position: relative;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  font-size: larger;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+form>div {
+  display: grid;
+  row-gap: 5px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: var(--textColor);
+  background-color: var(--bodyColor);
+  font-size: xx-large;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.formTitle {
+  font-weight: 700;
+  font-size: x-large;
+}
+
+form input {
+  padding: 8px;
+  font-size: medium;
+}
+
+.formSubmit {
+  padding: 10px;
+  background-color: var(--themeColor);
+  color: white;
+  border: solid;
+  font-size: medium;
+  border-radius: 10px;
+}

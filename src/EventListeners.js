@@ -1,4 +1,4 @@
-import NewTasks from "./NewTasks.js";
+import AddTaskProject from "./AddTaskProject.js";
 
 export default class EventListeners{
 
@@ -8,7 +8,7 @@ export default class EventListeners{
 
   eventListenProject(){  
     const projectsTile = document.getElementById("projects");
-    const btn = new NewTasks(this.toDoList, "Projects");
+    const btn = new AddTaskProject(this.toDoList, "Project");
     projectsTile.addEventListener("click", ()=>btn.renderTasks());
   }
    
@@ -22,13 +22,13 @@ export default class EventListeners{
 
   eventListenTasks(){  
     const tasksTile = document.getElementById("tasks");
-    const btn = new NewTasks(this.toDoList, "Tasks");
+    const btn = new AddTaskProject(this.toDoList, "Task");
     tasksTile.addEventListener("click", ()=>btn.renderTasks());
   }
 
   eventListenComplete(){  
     const completeTile = document.getElementById("complete");
-    const btn = new NewTasks(this.toDoList, "completed");
+    const btn = new AddTaskProject(this.toDoList, "completed");
     completeTile.addEventListener("click", ()=>btn.renderTasks());
   }
 
