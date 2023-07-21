@@ -12,58 +12,31 @@
 }
 
 .container {
-  height: 100vh;
   display: grid;
   background-color: var(--bodyColor);
   font-family: var(--bodyFont);
   justify-content: center;
   margin: 1px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr;
-  row-gap: 4rem;
+  grid-template-rows: auto 1fr;
+  row-gap: 4px;
 }
 
 .hero-title {
   text-align: center;
-  padding: 1rem;
-  font-size: xx-large;
+  padding: 3rem;
+  font-size: min(6vw, 40px);
+  font-weight: 900;
   color: var(--themeColor);
-  grid-column: 1/-1;
+  text-align: center;
+  border-bottom-color: var(--themeColor);
+  border-bottom-width: 5px;
+  border-bottom-style: groove;
 }
 
 .notask-para {
   font-weight: bolder;
   font-size: larger;
-}
-
-.sidebar {
-  color: var(--themeColor);
-  border-color: var(--themeColor);
-  border-width: 5px;
-  border-style: solid;
-  display: grid;
-  grid-auto-flow: column;
-  font-size: larger;
-  text-align: center;
-  justify-content: place-between;
-  align-items: center;
-  font-weight: bolder;
-}
-
-.sidebar>div {
-  padding: 1rem;
-}
-
-.sidebar>div:active {
-  background-color: var(--themeColor);
-  color: var(--bodyColor);
-}
-
-.rightbar {
-  padding: 1rem;
-  display: grid;
-  gap: 1rem;
-  place-content: center;
 }
 
 .sidebar>div {
@@ -132,7 +105,8 @@ form>div {
   font-size: x-large;
 }
 
-form input {
+form input,
+select {
   padding: 8px;
   font-size: medium;
 }
@@ -144,4 +118,27 @@ form input {
   border: solid;
   font-size: medium;
   border-radius: 10px;
+}
+
+.ProjectContainer {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.noTaskDiv {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: large;
+}
+
+.rightbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 1rem;
+  padding: 1rem;
 }
