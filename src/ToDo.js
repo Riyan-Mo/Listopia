@@ -1,8 +1,12 @@
 export default class ToDo{
-  constructor(_title, _dueDate, _priority, _isComplete){
+
+  parentId = "";
+
+  constructor(_title, _dueDate, _priority, _id){
     this.title = _title;
     this.dueDate = _dueDate;
     this.priority = _priority;
-    this.isComplete = _isComplete;
+    this.id = _id;
+    this.isComplete = false;
   }
 }

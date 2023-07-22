@@ -1,10 +1,11 @@
 export default class Project{
   
-  constructor(_title){
-    this.title = _title;
-  }
+  tasks = [];
+  isComplete = true;
 
-  makeMiniTasks(){
-    
+  constructor(_title, _id){
+    this.title = _title;
+    this.id = _id;
   }
+  
 }

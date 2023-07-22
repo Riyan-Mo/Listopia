@@ -1,13 +1,13 @@
 import "./styles.css";
 import PageLayout from "./pageLayout.js";
-import EventListeners from "./EventListeners";
+import AddTaskProject from "./AddTaskProject.js";
 
 window.onload = function(){
-  const taskArr = [];
+  const taskArr = JSON.parse(localStorage.getItem("Projects"))||[];
   const page = new PageLayout();
   page.createLayout();
-  const eve = new EventListeners(taskArr); 
-  eve.eventListenProject();
+  const btn = new AddTaskProject(taskArr, "Project");
+  btn.renderRightbar(); 
 }
 
 
