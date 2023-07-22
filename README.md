@@ -1,2 +1,4 @@
 # Listopia
-A To-Do List app made using HTML, CSS, JS, Webpack and Tailwind CSS.
+A To-Do List app made using HTML, CSS, JS and LocalStorage API.
+##
+[Live Preview](https://tasklistopia.netlify.app/)
